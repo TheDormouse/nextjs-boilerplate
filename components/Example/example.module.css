@@ -1,0 +1,7 @@
+.example {
+    font-size: 4em;
+}
+
+.example.error {
+    background-color: red;
+}
