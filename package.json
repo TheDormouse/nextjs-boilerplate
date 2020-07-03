@@ -8,8 +8,7 @@
     "build": "next build",
     "start": "next start",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
-    "chromatic": "npx chromatic --project-token=5tvoigb76bi"
+    "build-storybook": "build-storybook"
   },
   "author": "Ben Martinez-Cain",
   "license": "ISC",
