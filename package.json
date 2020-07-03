@@ -9,7 +9,7 @@
     "start": "next start",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "vercel-storybook": "build-storybook -c .storybook -o build"
+    "chromatic": "npx chromatic --project-token=5tvoigb76bi"
   },
   "author": "Ben Martinez-Cain",
   "license": "ISC",
@@ -25,6 +25,7 @@
     "@storybook/addons": "^5.3.19",
     "@storybook/react": "^5.3.19",
     "babel-loader": "^8.1.0",
+    "chromatic": "^5.0.0",
     "css-loader": "^3.6.0"
   }
 }
