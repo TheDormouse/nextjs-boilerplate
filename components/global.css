@@ -1,0 +1,42 @@
+/* data-theme didn't get set */
+:root {
+    --one: red;
+    --two: blue;
+}
+
+[data-theme="dark"]{
+        --one: black;
+        --two: grey;
+        --bg: #24305E;
+        --bg-gradient: #2e3e7d;
+        --font: white;
+        --divcolor: #374785;
+        --err: green;
+    }
+
+[data-theme="light"]{
+        --one: grey;
+        --two: lightgrey;
+        --bg: #A8D0E6;
+        --bg-gradient: #bae7ff;
+        --divcolor: white;
+        --font: black;
+        --err: red;
+    }
+
+body, html {
+    min-height: 100%;
+    min-width: 100%;
+}
+body {
+    background-image: linear-gradient(45deg, var(--bg) 0%, var(--bg-gradient) 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    color: var(--font);
+}
+
+a {
+    text-decoration: none;
+    color: var(--font);
+}

@@ -1,7 +1,8 @@
 .example {
     font-size: 4em;
+    color: var(--font)
 }
 
 .example.error {
-    background-color: red;
+    background-color: var(--err);
 }
