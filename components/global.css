@@ -4,6 +4,8 @@
     --two: blue;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
 [data-theme="dark"]{
         --one: black;
         --two: grey;

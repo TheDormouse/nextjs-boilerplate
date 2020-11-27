@@ -1,14 +1,13 @@
 import ReactDOM from 'react-dom';
-import { Example } from './';
+import { Card } from './';
+import bg from '../../public/bg.jpg'
 
-it('Renders "Hello World"', () => {
+it('Matches snapshot', () => {
   const div = document.createElement('div');
   ReactDOM.render(
-   <Example />,
+   <Card src={bg} title='Jest Testing' />,
     div
   );
-
-  expect(div.textContent).toEqual('Hello World');
   expect(div).toMatchSnapshot();
 
   ReactDOM.unmountComponentAtNode(div);

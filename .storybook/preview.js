@@ -3,6 +3,14 @@ import { withTests } from '@storybook/addon-jest';
 import '../components/global.css'
  
 import results from '../.jest-test-results.json';
+import * as nextImage from 'next/image';
+
+Object.defineProperty(nextImage, 'default', {
+  configurable: true,
+  value: (props) => {
+    return <img {...props} />;
+  },
+});
  
 addDecorator(
   withTests({
